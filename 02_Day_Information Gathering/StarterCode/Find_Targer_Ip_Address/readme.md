@@ -1,3 +1,6 @@
+
+
+
 ## host 
 
 - The `host` command is used to perform DNS (Domain Name System) lookups, which translates domain names to IP addresses. When you run the command host www.example.com, it queries the DNS server to find the IP address associated with the domain name "www.example.com". 
