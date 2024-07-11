@@ -5,6 +5,31 @@
 - Nslookup (stands for “Name Server Lookup”) is a useful command for getting information from the DNS server. It is a network administration tool for querying the Domain Name System (DNS) to obtain domain name or IP address mapping or any other specific DNS record. It is also used to troubleshoot DNS-related problems.
 
 
+## Features
+
+- **DNS Record Query**: Query different types of DNS records such as A (IPv4 address), AAAA (IPv6 address), MX (mail exchange), NS (name server), PTR (reverse DNS lookup), and more.
+  
+- **Domain Name Resolution**: Translate domain names to IP addresses (forward lookup) or IP addresses to domain names (reverse lookup).
+  
+- **Specific DNS Servers Query**: Query a specific DNS server directly by specifying its IP address or domain name.
+  
+- **Interactive Mode**: Provides an interactive mode where multiple commands can be entered and results viewed without restarting the tool for each query.
+  
+- **Debugging DNS Issues**: Used by network administrators and IT professionals for diagnosing DNS-related problems, such as checking if DNS records are correctly configured or troubleshooting name resolution issues.
+  
+- **Zone Transfer**: Can initiate a zone transfer from a DNS server, allowing transfer of the entire DNS database (zone) from one server to another.
+
+## Usage
+
+To use NSLOOKUP:
+
+1. Open a command prompt or terminal.
+2. Type `nslookup` followed by the domain name or IP address you want to query.
+3. Optionally, specify a DNS server to query by typing `server <DNS_server_IP>` before entering your query.
+4. NSLOOKUP will display the results of your query, including the IP address associated with the domain name or vice versa, along with additional information based on the type of query.
+
+NSLOOKUP is a versatile tool essential for network troubleshooting and exploring DNS configurations. It is widely used for verifying DNS records, resolving domain names, and diagnosing DNS-related issues effectively.
+
 
 
 - Find the IP address of a domain name using `nslookup`, which stands for Name Server Look Up. You need to issue the command `nslookup DOMAIN_NAME`, for example, `nslookup tryhackme.com`. Or, more generally, you can use `nslookup OPTIONS DOMAIN_NAME SERVER`. These three main parameters are:

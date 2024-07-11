@@ -1,9 +1,12 @@
 
 <!-- TOC -->
 
-- [Whois domain lookup?](#whois-domain-lookup)
-    - [Answer the questions below](#answer-the-questions-below)
-        - [When was TryHackMe.com registered?](#when-was-tryhackmecom-registered)
+- [- A Whois domain lookup is a tool used to query databases that store information about registered domain names. When someone registers a domain name e.g., example.com, they must provide contact information such as their name, address, email address, and phone number. This information is stored in a Whois database and is publicly accessible.](#--a-whois-domain-lookup-is-a-tool-used-to-query-databases-that-store-information-about-registered-domain-names-when-someone-registers-a-domain-name-eg-examplecom-they-must-provide-contact-information-such-as-their-name-address-email-address-and-phone-number-this-information-is-stored-in-a-whois-database-and-is-publicly-accessible)
+- [Domain Ownership Verification:](#domain-ownership-verification)
+    - [When was TryHackMe.com registered?](#when-was-tryhackmecom-registered)
+        - [Question Hint](#question-hint)
+        - [Question Hint](#question-hint)
+        - [](#)
 
 <!-- /TOC -->
 ## Whois domain lookup?
@@ -17,6 +20,32 @@
 
 To get this information, we need to use a `whois` client or an online service. Many online services provide `whois `information; however, it is generally faster and more convenient to use your local whois client. Using the AttackBox (or your local Linux machine, such as Parrot or Kali), you can easily access your whois client on the terminal. The syntax is `whois DOMAIN_NAME`, where DOMAIN_NAME is the domain about which you are trying to get more information. Consider the following example executing `whois tryhackme.com.`
 
+
+- WHOIS ek internet protocol hai jo domain registration details ko prapt karne ke liye istemal hota hai. Jab koi vyakti ya organisation ek naya domain register karta hai, to us domain ke sath saath uski registration ke details bhi store hoti hain WHOIS database mein. Is database mein domain ka malik (owner) ka naam, sampark jaankari, registration date, expiration date, aur kabhi-kabhi technical jaankari bhi hoti hai.
+
+- WHOIS lookup karne ke liye kai online tools uplabdh hain jaise ki ICANN ke official website par ya phir third-party services par. Domain name ko enter karke aap WHOIS lookup kar sakte hain aur us domain ke registration ke baare mein jaankari prapt kar sakte hain.
+
+
+## WHOIS lookup serves several purposes, such as:
+
+1. Domain Ownership Verification:
+
+- To confirm who owns a domain and whether their details are accurate.
+
+2. Contact Information
+
+- To obtain contact details of the domain owner for communication purposes.
+
+- Domain ke malik se sampark karne ke liye.
+
+3. Expiration Date:
+
+- To check the validity period and expiration date of the domain.
+
+
+4. Name Server Information
+
+- To find out which name servers are responsible for handling DNS queries for the domain.
 
 ```base
 
@@ -178,7 +207,7 @@ Creation Date: 2018-07-05T19:46:15Z
 ````
 20180705
 
-```
+````
 
 
 #### 2. What is the registrar of TryHackMe.com?
